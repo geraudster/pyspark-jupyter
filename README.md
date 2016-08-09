@@ -7,7 +7,7 @@ Docker image for Python, Jupyter and Spark.
 ## Run it
 
     docker run -d -v $HOME/conf:/opt/spark/conf \
-                  -p 4040:4040 \
+                  --net=host \
                   -p 8888:8888 geraudster/pyspark-jupyter
 
 Open http://localhost:8888

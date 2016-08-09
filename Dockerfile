@@ -20,7 +20,7 @@ ENV LC_ALL en_US.UTF-8
 
 # Set SPARK env variables
 ENV SPARK_HOME /opt/spark/spark-1.6.2-bin-hadoop2.6
-ENV HADOOP_CONF_DIR /opt/spark/conf
-ENV SPARK_CONF_DIR /opt/spark/conf
+ENV HADOOP_CONF_DIR /etc/hadoop/conf
+ENV SPARK_CONF_DIR /etc/spark/conf
 WORKDIR /data/jupyter/
 
